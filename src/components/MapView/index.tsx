@@ -14,7 +14,7 @@ const MapView = () => {
   const getCategoryIcon = (categoryId) => {
     const category = mapData.categories[categoryId];
     return L.icon({
-      iconUrl: `/icons/${category.icon}.png`,
+      iconUrl: `${window.location.href.includes('localhost') ? '' : '/mosaics-map'}/icons/${category.icon}.png`,
       iconSize: [25, 41],
       iconAnchor: [12, 41],
     });
