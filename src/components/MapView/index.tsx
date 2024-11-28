@@ -30,24 +30,53 @@ const MapView = () => {
 
   const tileUrl = `https://tiles.mapgenie.io/games/${mapData.mapConfig.tile_sets[0].pattern}`;
 
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
-    <div>
-      {/* Category Filters */}
-      <div className="category-filters">
-        {Object.values(mapData.categories).map((category) => (
-          <label key={category.id}>
-            <input
-              type="checkbox"
-              checked={activeCategories.includes(category.id.toString())}
-              onChange={() => toggleCategory(category.id.toString())}
-            />
-            {category.title}
-          </label>
-        ))}
-      </div>
+    <div className="map-view">
+      {/* Sidebar Toggle Button */}
+      <button className="sidebar-toggle" onClick={toggleSidebar}>
+        {isSidebarOpen ? 'Hide Categories' : 'Show Categories'}
+      </button>
+
+      {/* Sidebar */}
+      {isSidebarOpen && (
+        <div className="sidebar">
+          <h2>Categories</h2>
+          <ul className="category-list">
+            {Object.values(mapData.categories).map((category) => (
+              <li key={category.id}>
+                <label>
+                  <input
+                    type="checkbox"
+                    checked={activeCategories.includes(category.id.toString())}
+                    onChange={() => toggleCategory(category.id.toString())}
+                  />
+                  {/* Optional: Add icon next to category title */}
+                  <span className="category-title">
+                    {category.icon && (
+                      <img
+                        src={`/icons/${category.icon}.png`}
+                        alt={category.title}
+                        className="category-icon"
+                      />
+                    )}
+                    {category.title}
+                  </span>
+                </label>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
 
       {/* Map */}
-      <MapContainer center={[startLat, startLng]} zoom={initialZoom} style={{ height: '90vh', width: '100%' }}>
+      <MapContainer center={[startLat, startLng]} zoom={initialZoom} style={{ height: '100vh', width: '100%' }}>
         <TileLayer
           url={tileUrl}
           minZoom={mapData.mapConfig.tile_sets[0].min_zoom}
@@ -89,7 +118,7 @@ const MapView = () => {
                 <p>{location.description}</p>
                 {location.media &&
                   location.media.map((mediaItem) => (
-                    <img key={mediaItem.id} src={mediaItem.url} alt={mediaItem.title} style={{ width: '100%' }} />
+                    <img key={mediaItem.id} src={mediaItem.url} alt={mediaItem.title} style={{ width: '-webkit-fill-available' }} />
                   ))}
               </Popup>
             </Marker>

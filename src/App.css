@@ -31,3 +31,106 @@ body,
   padding: 5px;
   border-radius: 5px;
 }
+/* MapView container */
+.map-view {
+  position: relative;
+  height: 100vh;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px; /* Adjust as needed */
+  height: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  z-index: 1000; /* Ensure it appears above the map */
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  margin-top: 35px;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-list li {
+  margin-bottom: 15px;
+}
+
+.category-list label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #555;
+}
+
+.category-list input[type='checkbox'] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.category-title {
+  display: flex;
+  align-items: center;
+}
+
+.category-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+  position: absolute;
+  top: 15px;
+  left: 45px;
+  z-index: 1100; /* Above the sidebar */
+  background-color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-toggle:focus {
+  outline: none;
+}
+
+.leaflet-popup-content {
+  min-width: 50vw !important;
+  max-width: 70vw !important;
+  width: 301px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .category-list label {
+    font-size: 14px;
+  }
+
+  .category-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
