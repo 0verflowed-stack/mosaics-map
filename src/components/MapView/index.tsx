@@ -60,7 +60,7 @@ const MapView = () => {
                   <span className="category-title">
                     {category.icon && (
                       <img
-                        src={`/icons/${category.icon}.png`}
+                        src={`${window.location.href.includes('localhost') ? '' : '/mosaics-map'}/icons/${category.icon}.png`}
                         alt={category.title}
                         className="category-icon"
                       />
