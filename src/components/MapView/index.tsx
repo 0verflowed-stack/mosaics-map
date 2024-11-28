@@ -118,7 +118,7 @@ const MapView = () => {
                 <p>{location.description}</p>
                 {location.media &&
                   location.media.map((mediaItem) => (
-                    <img key={mediaItem.id} src={`${window.location.href.includes('localhost') ? '' : '/mosaics-map'}mediaItem.url`} alt={mediaItem.title} style={{ width: '-webkit-fill-available' }} />
+                    <img key={mediaItem.id} src={`${window.location.href.includes('localhost') ? '' : '/mosaics-map'}${mediaItem.url}`} alt={mediaItem.title} style={{ width: '-webkit-fill-available' }} />
                   ))}
               </Popup>
             </Marker>
