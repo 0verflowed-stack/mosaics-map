@@ -8,6 +8,8 @@ import { MapData } from '../../types/mapData';
 
 const mapData = mapDataNoType as unknown as MapData;
 
+const baseUrl = window.location.href.includes('localhost') ? '' : '/mosaics-map';
+
 const MapViewEvents = ({ children }: { children: ReactNode }) => {
   useMapEvents({
       contextmenu: (e: L.LeafletMouseEvent) => {
@@ -32,7 +34,7 @@ const MapView = () => {
   const getCategoryIcon = (categoryId: number) => {
     const category = mapData.categories[categoryId];
     return L.icon({
-      iconUrl: `/icons/${category.icon}.png`,
+      iconUrl: `${baseUrl}/icons/${category.icon}.png`,
       iconSize: [25, 41],
       iconAnchor: [12, 41],
     });
@@ -75,7 +77,7 @@ const MapView = () => {
                   <span className="category-title">
                     {category.icon && (
                       <img
-                        src={`/icons/${category.icon}.png`}
+                        src={`${baseUrl}/icons/${category.icon}.png`}
                         alt={category.title}
                         className="category-icon"
                       />
