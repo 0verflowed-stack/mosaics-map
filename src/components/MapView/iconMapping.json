@@ -1,0 +1,359 @@
+{
+    "arch_anomaly": {
+        "width": 33,
+        "height": 44,
+        "x": 66,
+        "y": 0,
+        "pixelRatio": 1
+    },
+    "base": {
+        "width": 33,
+        "height": 44,
+        "x": 198,
+        "y": 0,
+        "pixelRatio": 1
+    },
+    "bed": {
+        "width": 33,
+        "height": 44,
+        "x": 0,
+        "y": 44,
+        "pixelRatio": 1
+    },
+    "camp": {
+        "width": 33,
+        "height": 44,
+        "x": 132,
+        "y": 44,
+        "pixelRatio": 1
+    },
+    "city": {
+        "width": 33,
+        "height": 44,
+        "x": 231,
+        "y": 44,
+        "pixelRatio": 1
+    },
+    "location": {
+        "width": 33,
+        "height": 44,
+        "x": 165,
+        "y": 88,
+        "pixelRatio": 1
+    },
+    "point_of_interest": {
+        "width": 33,
+        "height": 44,
+        "x": 132,
+        "y": 176,
+        "pixelRatio": 1
+    },
+    "underground_access": {
+        "width": 33,
+        "height": 44,
+        "x": 165,
+        "y": 220,
+        "pixelRatio": 1
+    },
+    "character": {
+        "width": 33,
+        "height": 44,
+        "x": 165,
+        "y": 44,
+        "pixelRatio": 1
+    },
+    "guide": {
+        "width": 33,
+        "height": 44,
+        "x": 99,
+        "y": 88,
+        "pixelRatio": 1
+    },
+    "medic": {
+        "width": 33,
+        "height": 44,
+        "x": 33,
+        "y": 132,
+        "pixelRatio": 1
+    },
+    "technician": {
+        "width": 33,
+        "height": 44,
+        "x": 66,
+        "y": 220,
+        "pixelRatio": 1
+    },
+    "trader": {
+        "width": 33,
+        "height": 44,
+        "x": 99,
+        "y": 220,
+        "pixelRatio": 1
+    },
+    "artifact": {
+        "width": 33,
+        "height": 44,
+        "x": 99,
+        "y": 0,
+        "pixelRatio": 1
+    },
+    "key": {
+        "width": 33,
+        "height": 44,
+        "x": 132,
+        "y": 88,
+        "pixelRatio": 1
+    },
+    "named_artifact": {
+        "width": 33,
+        "height": 44,
+        "x": 132,
+        "y": 132,
+        "pixelRatio": 1
+    },
+    "stash": {
+        "width": 33,
+        "height": 44,
+        "x": 0,
+        "y": 220,
+        "pixelRatio": 1
+    },
+    "unique_gear": {
+        "width": 33,
+        "height": 44,
+        "x": 198,
+        "y": 220,
+        "pixelRatio": 1
+    },
+    "unique_weapon": {
+        "width": 33,
+        "height": 44,
+        "x": 231,
+        "y": 220,
+        "pixelRatio": 1
+    },
+    "ammo": {
+        "width": 33,
+        "height": 44,
+        "x": 0,
+        "y": 0,
+        "pixelRatio": 1
+    },
+    "attachment": {
+        "width": 33,
+        "height": 44,
+        "x": 132,
+        "y": 0,
+        "pixelRatio": 1
+    },
+    "bag": {
+        "width": 33,
+        "height": 44,
+        "x": 165,
+        "y": 0,
+        "pixelRatio": 1
+    },
+    "body": {
+        "width": 33,
+        "height": 44,
+        "x": 33,
+        "y": 44,
+        "pixelRatio": 1
+    },
+    "breakable_crate": {
+        "width": 33,
+        "height": 44,
+        "x": 99,
+        "y": 44,
+        "pixelRatio": 1
+    },
+    "chest": {
+        "width": 33,
+        "height": 44,
+        "x": 198,
+        "y": 44,
+        "pixelRatio": 1
+    },
+    "gear": {
+        "width": 33,
+        "height": 44,
+        "x": 66,
+        "y": 88,
+        "pixelRatio": 1
+    },
+    "loot": {
+        "width": 33,
+        "height": 44,
+        "x": 231,
+        "y": 88,
+        "pixelRatio": 1
+    },
+    "medical": {
+        "width": 33,
+        "height": 44,
+        "x": 66,
+        "y": 132,
+        "pixelRatio": 1
+    },
+    "note": {
+        "width": 33,
+        "height": 44,
+        "x": 165,
+        "y": 132,
+        "pixelRatio": 1
+    },
+    "pda": {
+        "width": 33,
+        "height": 44,
+        "x": 198,
+        "y": 132,
+        "pixelRatio": 1
+    },
+    "safe": {
+        "width": 33,
+        "height": 44,
+        "x": 165,
+        "y": 176,
+        "pixelRatio": 1
+    },
+    "sustenance": {
+        "width": 33,
+        "height": 44,
+        "x": 33,
+        "y": 220,
+        "pixelRatio": 1
+    },
+    "upgrade": {
+        "width": 33,
+        "height": 44,
+        "x": 0,
+        "y": 264,
+        "pixelRatio": 1
+    },
+    "weapon": {
+        "width": 33,
+        "height": 44,
+        "x": 33,
+        "y": 264,
+        "pixelRatio": 1
+    },
+    "main_mission": {
+        "width": 33,
+        "height": 44,
+        "x": 0,
+        "y": 132,
+        "pixelRatio": 1
+    },
+    "side_mission": {
+        "width": 33,
+        "height": 44,
+        "x": 198,
+        "y": 176,
+        "pixelRatio": 1
+    },
+    "anomaly": {
+        "width": 33,
+        "height": 44,
+        "x": 33,
+        "y": 0,
+        "pixelRatio": 1
+    },
+    "base_commander": {
+        "width": 33,
+        "height": 44,
+        "x": 231,
+        "y": 0,
+        "pixelRatio": 1
+    },
+    "boss": {
+        "width": 33,
+        "height": 44,
+        "x": 66,
+        "y": 44,
+        "pixelRatio": 1
+    },
+    "enemy": {
+        "width": 33,
+        "height": 44,
+        "x": 33,
+        "y": 88,
+        "pixelRatio": 1
+    },
+    "squad_leader": {
+        "width": 33,
+        "height": 44,
+        "x": 231,
+        "y": 176,
+        "pixelRatio": 1
+    },
+    "trap": {
+        "width": 33,
+        "height": 44,
+        "x": 132,
+        "y": 220,
+        "pixelRatio": 1
+    },
+    "easter_egg": {
+        "width": 33,
+        "height": 44,
+        "x": 0,
+        "y": 88,
+        "pixelRatio": 1
+    },
+    "locked_door": {
+        "width": 33,
+        "height": 44,
+        "x": 198,
+        "y": 88,
+        "pixelRatio": 1
+    },
+    "miscellaneous": {
+        "width": 33,
+        "height": 44,
+        "x": 99,
+        "y": 132,
+        "pixelRatio": 1
+    },
+    "personal_stash": {
+        "width": 33,
+        "height": 44,
+        "x": 231,
+        "y": 132,
+        "pixelRatio": 1
+    },
+    "placeholder_6": {
+        "width": 33,
+        "height": 44,
+        "x": 0,
+        "y": 176,
+        "pixelRatio": 1
+    },
+    "placeholder_7": {
+        "width": 33,
+        "height": 44,
+        "x": 33,
+        "y": 176,
+        "pixelRatio": 1
+    },
+    "placeholder_8": {
+        "width": 33,
+        "height": 44,
+        "x": 66,
+        "y": 176,
+        "pixelRatio": 1
+    },
+    "placeholder_9": {
+        "width": 33,
+        "height": 44,
+        "x": 99,
+        "y": 176,
+        "pixelRatio": 1
+    },
+    "mosaic": {
+        "width": 33,
+        "height": 44,
+        "x": 99,
+        "y": 176,
+        "pixelRatio": 1
+    }
+}
