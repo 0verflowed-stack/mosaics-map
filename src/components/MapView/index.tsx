@@ -136,7 +136,7 @@ const MapView = () => {
                   <p>{location.description}</p>
                   {location.media &&
                     location.media.map((mediaItem) => (
-                      <img key={mediaItem.id} src={`${mediaItem.url}`} alt={mediaItem.title} style={{ width: '-webkit-fill-available' }} />
+                      <img key={mediaItem.id} src={`${baseUrl}${mediaItem.url}`} alt={mediaItem.title} style={{ width: '-webkit-fill-available' }} />
                     ))}
                 </Popup>
               </Marker>
